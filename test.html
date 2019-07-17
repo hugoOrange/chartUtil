@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>echarts Map 封装</title>
+</head>
+<body>
+    <style>
+        html, body, #map, #operation {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .chart{
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    </style>
+
+    <div class="chart" id="center_build_chart"></div>
+    <div class="chart" id="person_num_chart"></div>
+    <div class="chart" id="alarm_chart"></div>
+    <div class="chart" id="property_build_chart"></div>
+    <div class="chart" id="warehouse_chart"></div>
+    <div class="chart" id="manage_build_chart"></div>
+    <div class="chart" id="archives_chart"></div>
+
+    <script src="./requirejs/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: "",
+            paths: {
+                "jquery": "jquery/jquery-1.10.2.min",
+                "echarts": "echarts-3.8.4/echarts"
+            }
+        });
+    </script>
+    <script src="./test.js"></script>
+</body>
+</html>
